@@ -1,0 +1,175 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    margin: 0; /* Quita los márgenes predeterminados */
+    padding: 0; /* Quita el relleno predeterminado */
+    background-image: url('imagenes/fondo1.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en la pantalla */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 1000%;
+    height: 80%;
+    max-width: 950px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 10px; 
+    flex-direction: row;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+    display: flex;
+    flex-direction: column; /* Menú en vertical */
+    min-width: 250px;
+    height: 100%;
+    align-items: center; /* Centrar contenido */
+}
+
+.navbar .profile {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.navbar .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Hacer la imagen circular */
+    border: 2px solid #fff;
+}
+
+.navbar .profile h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+}
+
+.navbar li {
+    border-bottom: 1px solid #444; /* Líneas divisorias entre enlaces */
+    width: 100%;
+}
+
+.navbar li:last-child {
+    border-bottom: none; /* Sin borde para el último elemento */
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.navbar li a:hover {
+    background: #555;
+}
+
+
+main {
+    padding: 2rem;
+    flex-grow: 1; /* Para que ocupe el espacio restante */
+    text-align: center;
+    overflow-y: auto; /* Habilita el scroll en el contenido */
+    max-height: 100vh;
+}
+
+.hero {
+    display: flex; /* Usamos flexbox para alinear los elementos en fila */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 0px;
+}
+
+.texto {
+    flex: 1; /* Toma el resto del espacio disponible */
+    max-width: 80%; /* Limita el ancho del texto a un 60% */
+    padding-right: 10px; 
+    font-size:  17px;/* Espacio a la derecha del texto */
+    font-style: italic;
+}
+.textoS{
+    font-style: italic;
+    color: #163d34;
+    font-family: 'Brush Script MT';
+    font-size: 40px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+.formato{
+    text-align: left;
+    align-items: left;
+   
+}
+
+.formatoImagen{
+   
+        width: 257px;    /* Define el tamaño de la imagen */
+        height: 150px;   /* Mantiene la proporción de la imagen */
+        object-fit: cover; /* Asegura que la imagen se recorte para ajustarse al tamaño */
+        border: 5px solid #3a3a52;  /* Agrega un borde de 5px, color gris oscuro */
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 25%;
+    
+}
+
+.autor{
+    text-align: end;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Brush Script MT';
+    font-size: 25px;
+}
+
+.formatoImagenPrincipal{
+    width: 260px;    /* Define el tamaño de la imagen */
+    height: 260px;   /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen se recorte para ajustarse al tamaño */
+    border: 5px solid #0c4235;  /* Agrega un borde de 5px, color gris oscuro */
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.estiloTexto{
+    color: #0b7c62;
+}
